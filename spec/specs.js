@@ -11,4 +11,8 @@ describe('triangle', function() {
          expect(triangle(3, 3 ,3)).to.not.equal("This is not a triangle");
     });
 
+    it("is an equilateral triangle", function() {
+         expect(triangle(3, 3 ,3)).to.equal("This is an equilateral triangle");
+    });
+
 });

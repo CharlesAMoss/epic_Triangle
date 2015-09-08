@@ -10,10 +10,16 @@ var triangle = function(x, y, z) {
 
     if (!(checkArray[0] > (checkArray[1] + checkArray[2])))
     {
-        return "This is a triangle"
-    }
+        if ((x === y) && ( x === z)) {
 
-    else {return "This is not a triangle";}
+            return "This is an equilateral triangle"
+
+        }
+    } else {
+
+        return "This is not a triangle";
+
+    }
 
 
 
