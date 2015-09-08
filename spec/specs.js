@@ -1,9 +1,14 @@
 describe('triangle', function() {
-    it("is false for being a triangle", function() {
-        expect(triangle(2, 2 ,8)).to.equal(false);
+    it("returns a string", function() {
+        expect(triangle(2, 2 ,8)).to.be.a("string");
     });
 
-    // it("is true for most years divisible by 4", function() {
-    //     expect(leapYear(2012)).to.equal(true);
-    // });
+    it("is not a triangle", function() {
+         expect(triangle(2, 2 ,8)).to.equal("This is not a triangle");
+    });
+
+    it("is a triangle", function() {
+         expect(triangle(3, 3 ,3)).to.not.equal("This is not a triangle");
+    });
+
 });
