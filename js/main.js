@@ -12,15 +12,24 @@ var triangle = function(x, y, z) {
     {
         if ((x === y) && ( x === z)) {
 
-            return "This is an equilateral triangle"
+            return "This is an equilateral triangle";
+
+        } else if ((x === y) || (x === z) || (y === z)) {
+
+            return "This is an isosceles triangle";
+
+        } else {
+
+            return "This is a scalene triangle";
 
         }
+
+
     } else {
 
         return "This is not a triangle";
 
     }
-
 
 
 };
